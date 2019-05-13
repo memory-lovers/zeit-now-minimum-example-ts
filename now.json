@@ -1,7 +1,6 @@
 {
-    "version": 2,
-    "name": "express",
-    "builds": [
-        { "src": "**/*.js", "use": "@now/node" }
-    ]
+  "version": 2,
+  "name": "express",
+  "builds": [{ "src": "src/**/*.ts", "use": "@now/node" }],
+  "routes": [{ "src": "/(.*)", "dest": "/src/$1" }]
 }
